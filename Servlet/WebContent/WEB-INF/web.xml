@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
   <display-name>Servlet</display-name>
   <welcome-file-list>
     <welcome-file>index.html</welcome-file>
@@ -178,9 +178,6 @@
     <servlet-name>EditAttr</servlet-name>
     <url-pattern>/EditAttr</url-pattern>
   </servlet-mapping>
-  <listener>
-    <listener-class>CheckLsnr2</listener-class>
-  </listener>
   <servlet>
     <description></description>
     <display-name>CheckLsnr2</display-name>
@@ -253,6 +250,16 @@
   </servlet-mapping>
   <servlet>
     <description></description>
+    <display-name>ShowSample14_2</display-name>
+    <servlet-name>ShowSample14_2</servlet-name>
+    <servlet-class>ShowSample14_2</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ShowSample14_2</servlet-name>
+    <url-pattern>/ShowSample14_2</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
     <display-name>RqSample2</display-name>
     <servlet-name>RqSample2</servlet-name>
     <servlet-class>RqSample2</servlet-class>
@@ -271,22 +278,24 @@
     <servlet-name>ShowSample15</servlet-name>
     <url-pattern>/ShowSample15</url-pattern>
   </servlet-mapping>
-  <filter>
-    <filter-name>ExFilter</filter-name>
-    <filter-class>ExFilter</filter-class>
-  </filter>
-  <filter-mapping>
-    <filter-name>ExFilter</filter-name>
-    <url-pattern>/*</url-pattern>
-  </filter-mapping>
-   <servlet>
+  <servlet>
     <description></description>
-    <display-name>UpFile2</display-name>
-    <servlet-name>UpFile2</servlet-name>
-    <servlet-class>UpFile2</servlet-class>
+    <display-name>ExeAnnotation</display-name>
+    <servlet-name>ExeAnnotation</servlet-name>
+    <servlet-class>ExeAnnotation</servlet-class>
   </servlet>
   <servlet-mapping>
-    <servlet-name>UpFile2</servlet-name>
-    <url-pattern>/UpFile2</url-pattern>
+    <servlet-name>ExeAnnotation</servlet-name>
+    <url-pattern>/ExeAnnotation</url-pattern>
+  </servlet-mapping>
+    <servlet>
+    <description></description>
+    <display-name>ExeAnnotation2</display-name>
+    <servlet-name>ExeAnnotation2</servlet-name>
+    <servlet-class>ExeAnnotation2</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ExeAnnotation2</servlet-name>
+    <url-pattern>/ExeAnnotation2</url-pattern>
   </servlet-mapping>
 </web-app>
